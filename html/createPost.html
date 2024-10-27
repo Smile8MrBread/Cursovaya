@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReadIt</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a class="header__logo">ReadIt</a>
+        <div class="header__center">
+          <img src="../css/img/admin.png" alt="img" class="header__adminImg" />
+          <div class="header__search">
+            <img src="../css/img/loop.png" alt="loop" class="header__loop" />
+            <input type="text" class="header__searchInput" />
+          </div>
+          <img src="../css/img/sun.png" alt="" class="header__theme" />
+        </div>
+        <div class="header__user">
+          <img src="../css/img/plus.png" alt="img" class="header__createImg" />
+          <img
+            src="../css/img/bell.png"
+            alt="img"
+            class="header__notificationImg"
+          />
+          <img src="../css/img/default.png" alt="img" class="header__userImg" />
+          <!-- <div class="header__settings">
+            <ul class="header__settingsList">
+              <li class="header__settingsItem">
+                <h3 class="header__settingName">Имя</h3>
+                <input type="text" class="header__input" />
+              </li>
+              <li class="header__settingsItem">
+                <h3 class="header__settingName">Фамилия</h3>
+                <input type="text" class="header__input" />
+              </li>
+              <li class="header__settingsItem">
+                <h3 class="header__settingName">Email</h3>
+                <input type="text" class="header__input" />
+              </li>
+              <li class="header__settingsItem">
+                <h3 class="header__settingName">Nickname</h3>
+                <input type="text" class="header__input" />
+              </li>
+            </ul>
+            <button class="header__changeAvatar">Сменить аватарку</button>
+            <button class="header__logout">Выйти</button>
+          </div> -->
+        </div>
+      </header>
+      <aside class="sidebar">
+        <article class="sidebar__pages">
+          <ul class="pages__list">
+            <li class="pages__item">
+              <img src="../css/img/news.png" alt="img" class="pages__image" />
+              <h3 class="pages__title active">Лента</h3>
+            </li>
+            <li class="pages__item">
+              <img src="../css/img/chats.png" alt="img" class="pages__image" />
+              <h3 class="pages__title">Чат</h3>
+            </li>
+          </ul>
+        </article>
+        <article class="sidebar__categories">
+          <div class="categories__head">
+            <h2>Категории</h2>
+          </div>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <h5 class="categories__title active">Природа</h5>
+              <img
+                src="../css/img/arrow.png"
+                alt="img"
+                class="categories__image"
+              />
+            </li>
+            <li class="categories__item">
+              <h5 class="categories__title">Игры</h5>
+              <img
+                src="../css/img/arrow.png"
+                alt="img"
+                class="categories__image"
+              />
+            </li>
+            <li class="categories__item">
+              <h5 class="categories__title">Наука</h5>
+              <img
+                src="../css/img/arrow.png"
+                alt="img"
+                class="categories__image"
+              />
+            </li>
+            <li class="categories__item">
+              <h5 class="categories__title">Достопримечательности</h5>
+              <img
+                src="../css/img/arrow.png"
+                alt="img"
+                class="categories__image"
+              />
+            </li>
+          </ul>
+        </article>
+      </aside>
+      <main class="main">
+        <aside class="createPost">
+          <h2 class="title">Создать пост</h2>
+          <input type="text" class="createPost__postTitle" />
+          <button class="createPost__addImg">Добавить картинку</button>
+          <div class="createPost__categories">
+            <button class="createPost_openCategories">Выбрать тему</button>
+            <ul class="createPost_categoriesList">
+              <li class="createPost_item">Природа</li>
+              <li class="createPost_item">Игры</li>
+              <li class="createPost_item">Наука</li>
+              <li class="createPost_item">Достопримечательности</li>
+            </ul>
+          </div>
+          <input type="text" class="createPost__postBody" />
+          <button class="createPost__publish">Опубликовать</button>
+          <button class="createPost_preview">Предосмотр</button>
+        </aside>
+      </main>
+      <aside class="guide">
+        <h3 class="guide__title">Руководство по созданию</h3>
+      </aside>
+    </div>
+  </body>
+</html>
