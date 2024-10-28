@@ -1,20 +1,25 @@
 body {
     background-color: #1E1E1E;
-}
-
-.container {
     font-family: "Fira Sans", sans-serif;
     font-style: normal;
     color: white;
-    margin: 0 auto;
-    width: fit-content;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
+.container {
+   
+    margin: 0 auto;
+    /* width: fit-content; */
 }
 
 img {
     width: 55px;
     height: 55px;
+}
+
+.main {
+    width: fit-content;
+}
+
+.flexer {
+    display: flex;
 }

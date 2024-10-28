@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReadIt</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <a class="header__logo">ReadIt</a>
-        <div class="header__center">
-          <img src="../css/img/admin.png" alt="img" class="header__adminImg" />
-          <div class="header__search">
-            <img src="../css/img/loop.png" alt="loop" class="header__loop" />
-            <input type="text" class="header__searchInput" />
-          </div>
-          <img src="../css/img/sun.png" alt="" class="header__theme" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadIt</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="header__logo">ReadIt</a>
+      <div class="header__center">
+        <img src="../css/img/admin.png" alt="img" class="header__adminImg" />
+        <div class="header__search">
+          <img src="../css/img/loop.png" alt="loop" class="header__loop" />
+          <input type="text" class="header__searchInput" />
         </div>
-        <div class="header__user">
-          <img src="../css/img/plus.png" alt="img" class="header__createImg" />
-          <img
-            src="../css/img/bell.png"
-            alt="img"
-            class="header__notificationImg"
-          />
-          <img src="../css/img/default.png" alt="img" class="header__userImg" />
-          <!-- <div class="header__settings">
+        <img src="../css/img/sun.png" alt="" class="header__theme" />
+      </div>
+      <div class="header__user">
+        <img src="../css/img/plus.png" alt="img" class="header__createImg" />
+        <img src="../css/img/bell.png" alt="img" class="header__notificationImg" />
+        <img src="../css/img/default.png" alt="img" class="header__userImg" />
+        <!-- <div class="header__settings">
             <ul class="header__settingsList">
               <li class="header__settingsItem">
                 <h3 class="header__settingName">Имя</h3>
@@ -48,17 +46,18 @@
             <button class="header__changeAvatar">Сменить аватарку</button>
             <button class="header__logout">Выйти</button>
           </div> -->
-        </div>
-      </header>
+      </div>
+    </header>
+    <div class="flexer">
       <aside class="sidebar">
         <article class="pages">
           <ul class="pages__list">
             <li class="pages__item">
-              <img src="" alt="img" class="pages__image" />
+              <img src="../css/img/news.png" alt="img" class="pages__image" />
               <h3 class="pages__title active">Лента</h3>
             </li>
             <li class="pages__item">
-              <img src="" alt="img" class="pages__image" />
+              <img src="../css/img/chats.png" alt="img" class="pages__image" />
               <h3 class="pages__title">Чат</h3>
             </li>
           </ul>
@@ -67,19 +66,19 @@
           <ul class="categories__list">
             <li class="categories__item">
               <h5 class="categories__title active">Природа</h5>
-              <img src="" alt="img" class="categories__image" />
+              <img src="../css/img/arrow.png" alt="img" class="categories__image" />
             </li>
             <li class="categories__item">
               <h5 class="categories__title">Игры</h5>
-              <img src="" alt="img" class="categories__image" />
+              <img src="../css/img/arrow.png" alt="img" class="categories__image" />
             </li>
             <li class="categories__item">
               <h5 class="categories__title">Наука</h5>
-              <img src="" alt="img" class="categories__image" />
+              <img src="../css/img/arrow.png" alt="img" class="categories__image" />
             </li>
             <li class="categories__item">
               <h5 class="categories__title">Достопримечательности</h5>
-              <img src="" alt="img" class="categories__image" />
+              <img src="../css/img/arrow.png" alt="img" class="categories__image" />
             </li>
           </ul>
         </article>
@@ -92,16 +91,16 @@
           </div>
           <div class="post__user">
             <h3 class="post__author"></h3>
-            <img src="" alt="" class="post__authorImg" />
+            <img src="../css/img/default.png" alt="" class="post__authorImg" />
           </div>
-          <img src="" alt="" class="post__mainImg" />
+          <img src="../css/img/natural.png" alt="" class="post__mainImg" />
           <div class="post__reactions">
             <div class="post__likes">
-              <img src="" alt="img" class="post__likeImg" />
+              <img src="../css/img/like.png" alt="img" class="post__likeImg" />
               <span class="post__likesCount"></span>
             </div>
             <div class="post__comments">
-              <img src="" alt="img" class="post__commentImg" />
+              <img src="../css/img/chat.png" alt="img" class="post__commentImg" />
               <span class="post__commentsCount"></span>
             </div>
           </div>
@@ -111,47 +110,53 @@
         <h2 class="rating__title">Топ постов за сегодня</h2>
         <ul class="rating__list">
           <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
+            <div class="rating__userImg">
+              <img src="../css/img/default.png" alt="img" />
+            </div>
+
+
+            <h3 class="rating__postTitle">Title</h3>
             <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" />
+              <img src="../css/img/like.png" alt="img" class="likes__image" />
               <span class="likes_count">23k</span>
             </div>
           </li>
           <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
+            <img src="../css/img/default.png" alt="img" class="rating__userImg" />
+            <h3 class="rating__postTitle">Title</h3>
             <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" />
+              <img src="../css/img/like.png" alt="img" class="likes__image" />
               <span class="likes_count">23k</span>
             </div>
           </li>
           <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
+            <img src="../css/img/default.png" alt="img" class="rating__userImg" />
+            <h3 class="rating__postTitle">Title</h3>
             <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" />
+              <img src="../css/img/like.png" alt="img" class="likes__image" />
               <span class="likes_count">23k</span>
             </div>
           </li>
           <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
+            <img src="../css/img/default.png" alt="img" class="rating__userImg" />
+            <h3 class="rating__postTitle">Title</h3>
             <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" />
+              <img src="../css/img/like.png" alt="img" class="likes__image" />
               <span class="likes_count">23k</span>
             </div>
           </li>
           <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
+            <img src="../css/img/default.png" alt="img" class="rating__userImg" />
+            <h3 class="rating__postTitle">Title</h3>
             <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" />
+              <img src="../css/img/like.png" alt="img" class="likes__image" />
               <span class="likes_count">23k</span>
             </div>
           </li>
         </ul>
       </article>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
