@@ -1,10 +1,17 @@
 .header {
     width: 100vw;
-    height: 10vh;
+    height: 118px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid white;
+    position: fixed;
+    left: 0;
+}
+
+.header img {
+    width: 55px;
+    height: 55px;
 }
 
 .header__logo {
@@ -16,8 +23,8 @@
 }
 
 .header__center {
-    width: 1010px;
-    height: 50px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -38,25 +45,32 @@
     border-radius: 100px;
 }
 
-.header__loop {
+.header__loop img {
     width: 34px;
     height: 34px;
     margin-left: 15px;
 }
 
-.header__userImg {
+.header__userImg img {
     width: 80px;
     height: 80px;
+}
+
+.header__userImg {
+    padding-left: 25px;
+}
+
+.header__notificationImg {
+    padding-left: 25px;
 }
 
 .header__user {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    margin-left: 0;
-    margin-right: 30px;
-    width: 233px;
+    margin: auto 0;
+    width: fit-content;
+    padding-right: 30px;
 }
 
 .header__signIn {
@@ -65,4 +79,9 @@
     margin: auto 0;
     margin-right: 30px;
     border-radius: 30px;
+}
+
+.header__adminImg, .header__loop, .header__theme, .header__createImg, .header__notificationImg, .header__userImg {
+    width: fit-content;
+    height: fit-content;
 }

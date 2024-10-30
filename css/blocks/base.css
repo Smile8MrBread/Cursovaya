@@ -5,21 +5,11 @@ body {
     color: white;
 }
 
-.container {
-   
-    margin: 0 auto;
-    /* width: fit-content; */
+.container {   
+    padding: 0 30px;
 }
 
-img {
+/* img {
     width: 55px;
     height: 55px;
-}
-
-.main {
-    width: fit-content;
-}
-
-.flexer {
-    display: flex;
-}
+} */

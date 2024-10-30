@@ -1,0 +1,48 @@
+.main {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    top: 138px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    padding: 15px;
+}
+
+.post__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.post__mainImg, .post__authorImg, .post__likeImg, .post__commentImg {
+    width: fit-content;
+    height: fit-content;
+}
+
+.post__authorImg img, .post__likeImg img, .post__commentImg img {
+    width: 55px;
+    height: 55px;
+}
+
+.post__mainImg img {
+    max-width: 820px;
+    max-height: 420px;
+}
+
+.post__user {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.post__author {
+    margin: auto;
+    padding-right: 15px;
+}
