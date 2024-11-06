@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .container {   
     padding: 0 30px;
 }

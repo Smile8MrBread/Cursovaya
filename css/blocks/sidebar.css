@@ -8,6 +8,21 @@
     top: 118px;
 }
 
+
+#active {
+    color: #D6604F;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    animation: sizing 1000ms;
+    animation-fill-mode: forwards;
+}
+
 .sidebar__pages {
     border-bottom: 1px solid white;
 }
@@ -81,6 +96,11 @@
     font-weight: 300;
 }
 
-.active {
-    color: #D6604F;
+@keyframes sizing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
