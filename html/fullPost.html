@@ -1,349 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReadIt</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <span class="header__logo">ReadIt</span>
-        <div class="header__center">
-          <div class="header__adminImg">
-            <img src="../css/img/admin.png" alt="img" />
-          </div>
-          <div class="header__search">
-            <div class="header__loop">
-              <img src="../css/img/loop.png" alt="loop" />
-            </div>
-            <input type="text" class="header__searchInput" />
-          </div>
-          <div class="header__theme">
-            <img src="../css/img/sun.png" alt="" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadIt</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="header__logo">ReadIt</span>
+      <div class="header__center">
+        <div class="header__adminImg">
+          <img src="../css/img/admin.png" alt="img" />
         </div>
-        <div class="header__user">
-          <div class="header__createImg">
-            <a href="./createPost.html"
-              ><img src="../css/img/plus.png" alt="img"
-            /></a>
+        <div class="header__search">
+          <div class="header__loop">
+            <img src="../css/img/loop.png" alt="loop" />
           </div>
-          <div class="header__notificationImg">
-            <img src="../css/img/bell.png" alt="img" />
-          </div>
-          <div class="dropdown">
-            <div class="header__userImg dropdown__click">
-              <img
-                src="../css/img/default.png"
-                alt="img"
-                onclick="DropDown1()"
-                id="header__userImg"
-              />
-            </div>
-            <ul
-              class="header__settingsList dropdown__list1"
-              id="dropdown__list1"
-            >
-              <li class="header__settingsItem dropdown__item">
-                <span class="header__settingName">Имя</span><br />
-                <input type="text" class="header__input" placeholder="Ivan" />
-              </li>
-              <li class="header__settingsItem dropdown__item">
-                <span class="header__settingName">Фамилия</span><br />
-                <input type="text" class="header__input" placeholder="Ivanov" />
-              </li>
-              <li class="header__settingsItem dropdown__item">
-                <span class="header__settingName">Email</span><br />
-                <input
-                  type="text"
-                  class="header__input"
-                  placeholder="ivanov@gmail.com"
-                />
-              </li>
-              <li class="header__settingsItem dropdown__item">
-                <span class="header__settingName">Nickname</span><br />
-                <input type="text" class="header__input" placeholder="IVN" />
-              </li>
-              <button class="header__changeAvatar">Сменить аватарку</button>
-              <button class="header__logout">Выйти</button>
-            </ul>
-          </div>
+          <input type="text" class="header__searchInput" />
         </div>
-      </header>
-      <aside class="sidebar">
-        <article class="sidebar__pages">
-          <ul class="pages__list">
-            <li class="pages__item">
-              <div class="pages__image">
-                <a href="authorized.html"><img src="../css/img/news.png" alt="img" /></a>
-              </div>
-              <a href="authorized.html" class="pages__title" id="active">Лента</a>
+        <div class="header__theme">
+          <img src="../css/img/sun.png" alt="" />
+        </div>
+      </div>
+      <div class="header__user">
+        <div class="header__createImg">
+          <a href="./createPost.html"><img src="../css/img/plus.png" alt="img" /></a>
+        </div>
+        <div class="header__notificationImg">
+          <img src="../css/img/bell.png" alt="img" />
+        </div>
+        <div class="dropdown">
+          <div class="header__userImg dropdown__click">
+            <img src="../css/img/default.png" alt="img" onclick="DropDown1()" id="header__userImg" />
+          </div>
+          <ul class="header__settingsList dropdown__list1" id="dropdown__list1">
+            <li class="header__settingsItem dropdown__item">
+              <span class="header__settingName">Имя</span><br />
+              <input type="text" class="header__input" placeholder="Ivan" />
             </li>
-            <li class="pages__item">
-              <div class="pages__image">
-                <img src="../css/img/chats.png" alt="img" />
-              </div>
-              <a href="" class="pages__title">Чат</a>
+            <li class="header__settingsItem dropdown__item">
+              <span class="header__settingName">Фамилия</span><br />
+              <input type="text" class="header__input" placeholder="Ivanov" />
             </li>
+            <li class="header__settingsItem dropdown__item">
+              <span class="header__settingName">Email</span><br />
+              <input type="text" class="header__input" placeholder="ivanov@gmail.com" />
+            </li>
+            <li class="header__settingsItem dropdown__item">
+              <span class="header__settingName">Nickname</span><br />
+              <input type="text" class="header__input" placeholder="IVN" />
+            </li>
+            <button class="header__changeAvatar">Сменить аватарку</button>
+            <button class="header__logout">Выйти</button>
           </ul>
-        </article>
-        <article class="sidebar__categories">
-          <div class="categories__head">
-            <span>Категории</span>
-          </div>
-          <ul class="categories__list">
-            <li class="categories__item">
-              <a href="" class="categories__title">Природа</a>
-              <img
-                src="../css/img/arrow.png"
-                alt="img"
-                class="categories__image"
-              />
-            </li>
-            <li class="categories__item">
-              <a href class="categories__title" id="active">Игры</a>
-              <img
-                src="../css/img/arrow.png"
-                alt="img"
-                class="categories__image"
-              />
-            </li>
-            <li class="categories__item">
-              <a href class="categories__title">Наука</a>
-              <img
-                src="../css/img/arrow.png"
-                alt="img"
-                class="categories__image"
-              />
-            </li>
-            <li class="categories__item">
-              <a href="" class="categories__title">Достопримечательности</a>
-              <img
-                src="../css/img/arrow.png"
-                alt="img"
-                class="categories__image"
-              />
-            </li>
-          </ul>
-        </article>
-      </aside>
-      <main class="main">
-        <article class="post">
-          <div class="post__top">
-            <div class="post__header">
-              <span class="post__title">Title</span>
-              <span class="post__categories">Categories</span>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <article class="sidebar__pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <div class="pages__image">
+              <a href="authorized.html"><img src="../css/img/news.png" alt="img" /></a>
             </div>
-            <div class="post__user">
-              <span class="post__author">Ivanov Ivan</span>
-              <div class="post__authorImg">
-                <img src="../css/img/default.png" alt="img" />
-              </div>
-            </div>
-          </div>
-          <div class="post__mainContent">
-            <div class="post__mainImg">
-              <img src="../css/img/city.png" alt="img" />
-            </div>
-            <div class="post__prewiev">
-              <span>Prewiev text of this post</span>
-            </div>
-          </div>
-          <div class="post__reactions">
-            <div class="post__likes">
-              <div class="post__likeImg">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="post__likesCount">223k</span>
-            </div>
-            <div class="post__comments">
-              <div class="post__commentImg">
-                <img src="../css/img/chat.png" alt="img" />
-              </div>
-              <span class="post__commentsCount">12k</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <div class="post__top">
-            <div class="post__header">
-              <span class="post__title">Title</span>
-              <span class="post__categories">Categories</span>
-            </div>
-            <div class="post__user">
-              <span class="post__author">Ivanov Ivan</span>
-              <div class="post__authorImg">
-                <img src="../css/img/default.png" alt="img" />
-              </div>
-            </div>
-          </div>
-          <div class="post__mainContent">
-            <div class="post__mainImg">
-              <img src="../css/img/city.png" alt="img" />
-            </div>
-            <div class="post__prewiev">
-              <span>Prewiev text of this post</span>
-            </div>
-          </div>
-          <div class="post__reactions">
-            <div class="post__likes">
-              <div class="post__likeImg">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="post__likesCount">223k</span>
-            </div>
-            <div class="post__comments">
-              <div class="post__commentImg">
-                <img src="../css/img/chat.png" alt="img" />
-              </div>
-              <span class="post__commentsCount">12k</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <div class="post__top">
-            <div class="post__header">
-              <span class="post__title">Title</span>
-              <span class="post__categories">Categories</span>
-            </div>
-            <div class="post__user">
-              <span class="post__author">Ivanov Ivan</span>
-              <div class="post__authorImg">
-                <img src="../css/img/default.png" alt="img" />
-              </div>
-            </div>
-          </div>
-          <div class="post__mainContent">
-            <div class="post__mainImg">
-              <img src="../css/img/city.png" alt="img" />
-            </div>
-            <div class="post__prewiev">
-              <span>Prewiev text of this post</span>
-            </div>
-          </div>
-          <div class="post__reactions">
-            <div class="post__likes">
-              <div class="post__likeImg">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="post__likesCount">223k</span>
-            </div>
-            <div class="post__comments">
-              <div class="post__commentImg">
-                <img src="../css/img/chat.png" alt="img" />
-              </div>
-              <span class="post__commentsCount">12k</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <div class="post__top">
-            <div class="post__header">
-              <span class="post__title">Title</span>
-              <span class="post__categories">Categories</span>
-            </div>
-            <div class="post__user">
-              <span class="post__author">Ivanov Ivan</span>
-              <div class="post__authorImg">
-                <img src="../css/img/default.png" alt="img" />
-              </div>
-            </div>
-          </div>
-          <div class="post__mainContent">
-            <div class="post__mainImg">
-              <img src="../css/img/natural2.png" alt="img" />
-            </div>
-            <div class="post__prewiev">
-              <span>Prewiev text of this post</span>
-            </div>
-          </div>
-          <div class="post__reactions">
-            <div class="post__likes">
-              <div class="post__likeImg">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="post__likesCount">223k</span>
-            </div>
-            <div class="post__comments">
-              <div class="post__commentImg">
-                <img src="../css/img/chat.png" alt="img" />
-              </div>
-              <span class="post__commentsCount">12k</span>
-            </div>
-          </div>
-        </article>
-      </main>
-      <article class="rating">
-        <span class="rating__title">Топ постов за сегодня</span>
-        <ul class="rating__list">
-          <li class="rating__item">
-            <div class="rating__userImg">
-              <img src="../css/img/default.png" alt="img" />
-            </div>
-            <span class="rating__postTitle"
-              >QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ</span
-            >
-            <div class="rating__likes">
-              <div class="likes__image">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="likes__count">23k</span>
-            </div>
+            <a href="authorized.html" class="pages__title" id="active">Лента</a>
           </li>
-          <li class="rating__item">
-            <div class="rating__userImg">
-              <img src="../css/img/default.png" alt="img" />
+          <li class="pages__item">
+            <div class="pages__image">
+              <img src="../css/img/chats.png" alt="img" />
             </div>
-            <span class="rating__postTitle">Title</span>
-            <div class="rating__likes">
-              <div class="likes__image">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="likes__count">23k</span>
-            </div>
-          </li>
-          <li class="rating__item">
-            <div class="rating__userImg">
-              <img src="../css/img/default.png" alt="img" />
-            </div>
-            <span class="rating__postTitle">Title</span>
-            <div class="rating__likes">
-              <div class="likes__image">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="likes__count">23k</span>
-            </div>
-          </li>
-          <li class="rating__item">
-            <div class="rating__userImg">
-              <img src="../css/img/default.png" alt="img" />
-            </div>
-            <span class="rating__postTitle">Title</span>
-            <div class="rating__likes">
-              <div class="likes__image">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="likes__count">23k</span>
-            </div>
-          </li>
-          <li class="rating__item">
-            <div class="rating__userImg">
-              <img src="../css/img/default.png" alt="img" />
-            </div>
-            <span class="rating__postTitle">Title</span>
-            <div class="rating__likes">
-              <div class="likes__image">
-                <img src="../css/img/like.png" alt="img" />
-              </div>
-              <span class="likes__count">23k</span>
-            </div>
+            <a href="" class="pages__title">Чат</a>
           </li>
         </ul>
       </article>
-    </div>
-  </body>
-  <script src="../js/dropdown.js"></script>
+      <article class="sidebar__categories">
+        <div class="categories__head">
+          <span>Категории</span>
+        </div>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="" class="categories__title">Природа</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href class="categories__title" id="active">Игры</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href class="categories__title">Наука</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__title">Достопримечательности</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+        </ul>
+      </article>
+    </aside>
+    <main class="main">
+      <article class="fullPost">
+        <div class="fullPost__top">
+          <div class="fullPost__titleBlock">
+            <span class="fullPost__title">Title for post 1</span>
+            <span class="fullPost__categories">Games, Design</span>
+          </div>
+          <div class="fullPost__userBlock">
+            <div class="fullPost__penImg">
+              <img src="../css/img/pencil.png" alt="img">
+            </div>
+            <div class="fullPost__trashImg">
+              <img src="../css/img/trash.png" alt="img">
+            </div>
+            <span class="fullPost__commentUserName">Ivanov Ivan</span>
+            <div class="fullPost__userImg">
+              <img src="../css/img/default.png" alt="img">
+            </div>
+          </div>
+        </div>
+        <div class="fullPost__mainImg">
+          <img src="../css/img/default.png" alt="img">
+        </div>
+        <div class="fullPost__mainContent">
+
+        </div>
+        <div class="fullPost__reactions">
+          <div class="fullPost__likes">
+            <div class="fullPost__likeImg">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="fullPost__likesCount">223k</span>
+          </div>
+          <div class="fullPost__comments">
+            <div class="fullPost__commentImg">
+              <img src="../css/img/chat.png" alt="img" />
+            </div>
+            <span class="fullPost__commentsCount">12k</span>
+          </div>
+        </div>
+        <input type="text" class="fullPost__addComment">
+        <div class="fullPost__comment">
+          <div class="fullPost__commentUserBlock">
+            <div class="fullPost__commentUserImg">
+              <img src="../css/img/default.png" alt="img">
+            </div>
+            <span class="fullPost__commentNickname">Ivanov Ivan</span>
+          </div>
+          <span class="fullPost__commentText">Comment.......................</span>
+          <div class="fullPost__commentBottom">
+            <div class="fullPost__likeImg">
+              <img src="" alt="">
+            </div>
+            <span class="fullPost__likeCount">123</span>
+            <div class="fullPost__dislikeImg">
+              <img src="../css/img/dislike.png" alt="img">
+            </div>
+            <button class="fullPost__reply">Ответить</button>
+            <div class="fullPost__penImg">
+              <img src="../css/img/likeHand.png" alt="img">
+            </div>
+            <div class="fullPost__trashImg">
+              <img src="../css/img/trash.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
 </html>

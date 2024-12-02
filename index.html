@@ -1,137 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReadIt</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <a class="header__logo">ReadIt</a>
-        <div class="header__center">
-          <div class="header__search">
-            <img src="../css/img/loop.png" alt="loop" class="header__loop" />
-            <input type="text" class="header__searchInput" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadIt</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="header__logo">ReadIt</span>
+      <div class="header__center">
+        <!-- <div class="header__adminImg">
+            <img src="../css/img/admin.png" alt="img" />
+          </div> -->
+        <div class="header__search">
+          <div class="header__loop">
+            <img src="../css/img/loop.png" alt="loop" />
           </div>
+          <input type="text" class="header__searchInput" />
         </div>
-        <button class="header__signIn">Войти</button>
-      </header>
-      <aside class="sidebar">
-        <article class="pages">
-          <ul class="pages__list">
-            <li class="pages__item">
-              <img src="" alt="img" class="pages__image" />
-              <h3 class="pages__title active">Лента</h3>
-            </li>
-            <li class="pages__item">
-              <img src="" alt="img" class="pages__image" />
-              <h3 class="pages__title">Чат</h3>
-            </li>
-          </ul>
-        </article>
-        <article class="categories">
-          <ul class="categories__list">
-            <li class="categories__item">
-              <h5 class="categories__title active">Природа</h5>
-              <img src="" alt="img" class="categories__image" />
-            </li>
-            <li class="categories__item">
-              <h5 class="categories__title">Игры</h5>
-              <img src="" alt="img" class="categories__image" />
-            </li>
-            <li class="categories__item">
-              <h5 class="categories__title">Наука</h5>
-              <img src="" alt="img" class="categories__image" />
-            </li>
-            <li class="categories__item">
-              <h5 class="categories__title">Достопримечательности</h5>
-              <img src="" alt="img" class="categories__image" />
-            </li>
-          </ul>
-        </article>
-      </aside>
-      <main class="main">
-        <article class="post">
-          <div class="post__header">
-            <h2 class="post__title"></h2>
-            <h4 class="post__categories"></h4>
-          </div>
-          <div class="post__user">
-            <h3 class="post__author"></h3>
-            <img src="" alt="" class="post__authorImg" />
-          </div>
-          <img src="" alt="" class="post__mainImg" />
-          <div class="post__reactions">
-            <div class="post__likes">
-              <img src="" alt="img" class="post__likeImg" /><span
-                class="post__likesCount"
-              ></span>
+        <div class="header__theme">
+          <img src="../css/img/sun.png" alt="img" />
+        </div>
+      </div>
+      <button class="header__btnLogIn" onclick="Redirect()">Войти</button>
+    </header>
+    <aside class="sidebar">
+      <article class="sidebar__pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <div class="pages__image">
+              <a href="authorized.html"><img src="../css/img/news.png" alt="img" /></a>
             </div>
-            <div class="post__comments">
-              <img src="" alt="img" class="post__commentImg" /><span
-                class="post__commentsCount"
-              ></span>
-            </div>
-          </div>
-        </article>
-      </main>
-      <article class="rating">
-        <h2 class="rating__title">Топ постов за сегодня</h2>
-        <ul class="rating__list">
-          <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
-            <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" /><span
-                class="likes_count"
-                >23k</span
-              >
-            </div>
+            <a href="authorized.html" class="pages__title" id="active">Лента</a>
           </li>
-          <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
-            <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" /><span
-                class="likes_count"
-                >23k</span
-              >
+          <li class="pages__item">
+            <div class="pages__image">
+              <img src="../css/img/chats.png" alt="img" />
             </div>
-          </li>
-          <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
-            <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" /><span
-                class="likes_count"
-                >23k</span
-              >
-            </div>
-          </li>
-          <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
-            <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" /><span
-                class="likes_count"
-                >23k</span
-              >
-            </div>
-          </li>
-          <li class="rating__item">
-            <img src="" alt="img" class="rating__userImg" />
-            <h3 class="rating__title">Title</h3>
-            <div class="rating__likes">
-              <img src="" alt="img" class="likes__image" /><span
-                class="likes_count"
-                >23k</span
-              >
-            </div>
+            <a href="" class="pages__title">Чат</a>
           </li>
         </ul>
       </article>
-    </div>
-  </body>
+      <article class="sidebar__categories">
+        <div class="categories__head">
+          <span>Категории</span>
+        </div>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="" class="categories__title">Природа</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href class="categories__title" id="active">Игры</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href class="categories__title">Наука</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__title">Достопримечательности</a>
+            <img src="../css/img/arrow.png" alt="img" class="categories__image" />
+          </li>
+        </ul>
+      </article>
+    </aside>
+    <main class="main">
+      <article class="post" id="post">
+        <div class="post__top">
+          <div class="post__header" id="post">
+            <span class="post__title">Title</span>
+            <span class="post__categories">Categories</span>
+          </div>
+          <div class="post__user" id="post">
+            <span class="post__author">Ivanov Ivan</span>
+            <div class="post__authorImg" id="post">
+              <img src="../css/img/default.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="post__mainContent" id="post">
+          <div class="post__mainImg" id="post">
+            <img src="../css/img/city.png" alt="img" />
+          </div>
+          <div class="post__prewiev" id="post">
+            <span>Prewiev text of this post</span>
+          </div>
+        </div>
+        <div class="post__reactions" id="post">
+          <div class="post__likes" id="post">
+            <div class="post__likeImg" id="post">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="post__likesCount">223k</span>
+          </div>
+          <div class="post__comments" id="post">
+            <div class="post__commentImg" id="post">
+              <img src="../css/img/chat.png" alt="img" />
+            </div>
+            <span class="post__commentsCount">12k</span>
+          </div>
+        </div>
+      </article>
+      <article class="post" id="post">
+        <div class="post__top">
+          <div class="post__header" id="post">
+            <span class="post__title">Title</span>
+            <span class="post__categories">Categories</span>
+          </div>
+          <div class="post__user" id="post">
+            <span class="post__author">Ivanov Ivan</span>
+            <div class="post__authorImg" id="post">
+              <img src="../css/img/default.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="post__mainContent" id="post">
+          <div class="post__mainImg" id="post">
+            <img src="../css/img/city.png" alt="img" />
+          </div>
+          <div class="post__prewiev" id="post">
+            <span>Prewiev text of this post</span>
+          </div>
+        </div>
+        <div class="post__reactions" id="post">
+          <div class="post__likes" id="post">
+            <div class="post__likeImg" id="post">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="post__likesCount">223k</span>
+          </div>
+          <div class="post__comments" id="post">
+            <div class="post__commentImg" id="post">
+              <img src="../css/img/chat.png" alt="img" />
+            </div>
+            <span class="post__commentsCount">12k</span>
+          </div>
+        </div>
+      </article>
+      <article class="post" id="post">
+        <div class="post__top">
+          <div class="post__header" id="post">
+            <span class="post__title">Title</span>
+            <span class="post__categories">Categories</span>
+          </div>
+          <div class="post__user" id="post">
+            <span class="post__author">Ivanov Ivan</span>
+            <div class="post__authorImg" id="post">
+              <img src="../css/img/default.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="post__mainContent" id="post">
+          <div class="post__mainImg" id="post">
+            <img src="../css/img/city.png" alt="img" />
+          </div>
+          <div class="post__prewiev" id="post">
+            <span>Prewiev text of this post</span>
+          </div>
+        </div>
+        <div class="post__reactions" id="post">
+          <div class="post__likes" id="post">
+            <div class="post__likeImg" id="post">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="post__likesCount">223k</span>
+          </div>
+          <div class="post__comments" id="post">
+            <div class="post__commentImg" id="post">
+              <img src="../css/img/chat.png" alt="img" />
+            </div>
+            <span class="post__commentsCount">12k</span>
+          </div>
+        </div>
+      </article>
+      <article class="post" id="post">
+        <div class="post__top">
+          <div class="post__header" id="post">
+            <span class="post__title">Title</span>
+            <span class="post__categories">Categories</span>
+          </div>
+          <div class="post__user" id="post">
+            <span class="post__author">Ivanov Ivan</span>
+            <div class="post__authorImg" id="post">
+              <img src="../css/img/default.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="post__mainContent" id="post">
+          <div class="post__mainImg" id="post">
+            <img src="../css/img/city.png" alt="img" />
+          </div>
+          <div class="post__prewiev" id="post">
+            <span>Prewiev text of this post</span>
+          </div>
+        </div>
+        <div class="post__reactions" id="post">
+          <div class="post__likes" id="post">
+            <div class="post__likeImg" id="post">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="post__likesCount">223k</span>
+          </div>
+          <div class="post__comments" id="post">
+            <div class="post__commentImg" id="post">
+              <img src="../css/img/chat.png" alt="img" />
+            </div>
+            <span class="post__commentsCount">12k</span>
+          </div>
+        </div>
+      </article>
+    </main>
+    <article class="rating">
+      <span class="rating__title">Топ постов за сегодня</span>
+      <ul class="rating__list">
+        <li class="rating__item">
+          <div class="rating__userImg">
+            <img src="../css/img/default.png" alt="img" />
+          </div>
+          <span class="rating__postTitle">QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ</span>
+          <div class="rating__likes">
+            <div class="likes__image">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="likes__count">23k</span>
+          </div>
+        </li>
+        <li class="rating__item">
+          <div class="rating__userImg">
+            <img src="../css/img/default.png" alt="img" />
+          </div>
+          <span class="rating__postTitle">Title</span>
+          <div class="rating__likes">
+            <div class="likes__image">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="likes__count">23k</span>
+          </div>
+        </li>
+        <li class="rating__item">
+          <div class="rating__userImg">
+            <img src="../css/img/default.png" alt="img" />
+          </div>
+          <span class="rating__postTitle">Title</span>
+          <div class="rating__likes">
+            <div class="likes__image">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="likes__count">23k</span>
+          </div>
+        </li>
+        <li class="rating__item">
+          <div class="rating__userImg">
+            <img src="../css/img/default.png" alt="img" />
+          </div>
+          <span class="rating__postTitle">Title</span>
+          <div class="rating__likes">
+            <div class="likes__image">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="likes__count">23k</span>
+          </div>
+        </li>
+        <li class="rating__item">
+          <div class="rating__userImg">
+            <img src="../css/img/default.png" alt="img" />
+          </div>
+          <span class="rating__postTitle">Title</span>
+          <div class="rating__likes">
+            <div class="likes__image">
+              <img src="../css/img/like.png" alt="img" />
+            </div>
+            <span class="likes__count">23k</span>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </div>
+</body>
+<script src="js/redirect.js"></script>
 </html>
