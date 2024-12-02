@@ -1,0 +1,9 @@
+.guide {
+    position: absolute;
+    right: 30px;
+}
+
+.guide__title {
+    font-size: 24px;
+    font-weight: 400;
+}

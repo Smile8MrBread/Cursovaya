@@ -4,4 +4,7 @@
 @import url(blocks/header.css);
 @import url(blocks/sidebar.css);
 @import url(blocks/rating.css);
-@import url(blocks/main.css);
+@import url(blocks/post.css);
+@import url(blocks/guide.css);
+@import url(blocks/createPost.css);
+@import url(blocks/dropdown.css);

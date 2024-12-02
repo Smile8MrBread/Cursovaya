@@ -1,0 +1,33 @@
+.dropdown__list1 {
+    display: none;
+    position: absolute;
+    right: 30px;
+    background-color: #232323;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 25px;
+    flex-direction: column;
+}
+
+.dropdown__list2 {
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    z-index: 2;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 25px;
+    flex-direction: column;
+    margin: 0;
+    margin-top: -15px;
+}
+
+.show {
+    display: flex;
+}
+
+.dropdown__click {
+    width: fit-content;
+    height: fit-content;
+}

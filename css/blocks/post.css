@@ -1,12 +1,9 @@
-.main {
+.post {
     position: relative;
     width: fit-content;
     margin: auto;
     top: 138px;
     z-index: 1;
-}
-
-.post {
     display: flex;
     flex-direction: column;
     max-width: 850px;

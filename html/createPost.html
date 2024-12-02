@@ -9,67 +9,97 @@
   <body>
     <div class="container">
       <header class="header">
-        <a class="header__logo">ReadIt</a>
+        <span class="header__logo">ReadIt</span>
         <div class="header__center">
-          <img src="../css/img/admin.png" alt="img" class="header__adminImg" />
+          <div class="header__adminImg">
+            <img src="../css/img/admin.png" alt="img" />
+          </div>
           <div class="header__search">
-            <img src="../css/img/loop.png" alt="loop" class="header__loop" />
+            <div class="header__loop">
+              <img src="../css/img/loop.png" alt="loop" />
+            </div>
             <input type="text" class="header__searchInput" />
           </div>
-          <img src="../css/img/sun.png" alt="" class="header__theme" />
+          <div class="header__theme">
+            <img src="../css/img/sun.png" alt="" />
+          </div>
         </div>
         <div class="header__user">
-          <img src="../css/img/plus.png" alt="img" class="header__createImg" />
-          <img
-            src="../css/img/bell.png"
-            alt="img"
-            class="header__notificationImg"
-          />
-          <img src="../css/img/default.png" alt="img" class="header__userImg" />
-          <!-- <div class="header__settings">
-            <ul class="header__settingsList">
-              <li class="header__settingsItem">
-                <h3 class="header__settingName">Имя</h3>
-                <input type="text" class="header__input" />
+          <div class="header__createImg">
+            <a href="./createPost.html"
+              ><img src="../css/img/plus.png" alt="img"
+            /></a>
+          </div>
+          <div class="header__notificationImg">
+            <img src="../css/img/bell.png" alt="img" />
+          </div>
+          <div class="dropdown">
+            <div class="header__userImg dropdown__click">
+              <img
+                src="../css/img/default.png"
+                alt="img"
+                onclick="DropDown1()"
+                id="header__userImg"
+              />
+            </div>
+            <ul
+              class="header__settingsList dropdown__list1"
+              id="dropdown__list1"
+            >
+              <li class="header__settingsItem dropdown__item">
+                <span class="header__settingName">Имя</span><br />
+                <input type="text" class="header__input" placeholder="Ivan" />
               </li>
-              <li class="header__settingsItem">
-                <h3 class="header__settingName">Фамилия</h3>
-                <input type="text" class="header__input" />
+              <li class="header__settingsItem dropdown__item">
+                <span class="header__settingName">Фамилия</span><br />
+                <input type="text" class="header__input" placeholder="Ivanov" />
               </li>
-              <li class="header__settingsItem">
-                <h3 class="header__settingName">Email</h3>
-                <input type="text" class="header__input" />
+              <li class="header__settingsItem dropdown__item">
+                <span class="header__settingName">Email</span><br />
+                <input
+                  type="text"
+                  class="header__input"
+                  placeholder="ivanov@gmail.com"
+                />
               </li>
-              <li class="header__settingsItem">
-                <h3 class="header__settingName">Nickname</h3>
-                <input type="text" class="header__input" />
+              <li class="header__settingsItem dropdown__item">
+                <span class="header__settingName">Nickname</span><br />
+                <input type="text" class="header__input" placeholder="IVN" />
               </li>
+              <button class="header__changeAvatar">Сменить аватарку</button>
+              <button class="header__logout">Выйти</button>
             </ul>
-            <button class="header__changeAvatar">Сменить аватарку</button>
-            <button class="header__logout">Выйти</button>
-          </div> -->
+          </div>
         </div>
       </header>
       <aside class="sidebar">
         <article class="sidebar__pages">
           <ul class="pages__list">
             <li class="pages__item">
-              <img src="../css/img/news.png" alt="img" class="pages__image" />
-              <h3 class="pages__title active">Лента</h3>
+              <div class="pages__image">
+                <a href="authorized.html"
+                  ><img src="../css/img/news.png" alt="img"
+                /></a>
+              </div>
+              <a href="authorized.html" class="pages__title" id="active"
+                >Лента</a
+              >
             </li>
             <li class="pages__item">
-              <img src="../css/img/chats.png" alt="img" class="pages__image" />
-              <h3 class="pages__title">Чат</h3>
+              <div class="pages__image">
+                <img src="../css/img/chats.png" alt="img" />
+              </div>
+              <a href="" class="pages__title">Чат</a>
             </li>
           </ul>
         </article>
         <article class="sidebar__categories">
           <div class="categories__head">
-            <h2>Категории</h2>
+            <span>Категории</span>
           </div>
           <ul class="categories__list">
             <li class="categories__item">
-              <h5 class="categories__title active">Природа</h5>
+              <a href="" class="categories__title">Природа</a>
               <img
                 src="../css/img/arrow.png"
                 alt="img"
@@ -77,7 +107,7 @@
               />
             </li>
             <li class="categories__item">
-              <h5 class="categories__title">Игры</h5>
+              <a href class="categories__title" id="active">Игры</a>
               <img
                 src="../css/img/arrow.png"
                 alt="img"
@@ -85,7 +115,7 @@
               />
             </li>
             <li class="categories__item">
-              <h5 class="categories__title">Наука</h5>
+              <a href class="categories__title">Наука</a>
               <img
                 src="../css/img/arrow.png"
                 alt="img"
@@ -93,7 +123,7 @@
               />
             </li>
             <li class="categories__item">
-              <h5 class="categories__title">Достопримечательности</h5>
+              <a href="" class="categories__title">Достопримечательности</a>
               <img
                 src="../css/img/arrow.png"
                 alt="img"
@@ -105,26 +135,77 @@
       </aside>
       <main class="main">
         <aside class="createPost">
-          <h2 class="title">Создать пост</h2>
-          <input type="text" class="createPost__postTitle" />
-          <button class="createPost__addImg">Добавить картинку</button>
-          <div class="createPost__categories">
-            <button class="createPost_openCategories">Выбрать тему</button>
-            <ul class="createPost_categoriesList">
-              <li class="createPost_item">Природа</li>
-              <li class="createPost_item">Игры</li>
-              <li class="createPost_item">Наука</li>
-              <li class="createPost_item">Достопримечательности</li>
-            </ul>
+          <span class="createPost__title">Создать пост</span>
+          <input
+            type="text"
+            class="createPost__postTitle"
+            placeholder="Заголовок"
+          />
+          <input
+            type="text"
+            class="createPost__postPreview"
+            placeholder="Превью"
+          />
+          <div class="createPost__buttons">
+            <button class="createPost__addImg">Добавить картинку</button>
+            <div class="dropdown">
+              <div class="createPost__categories">
+                <div class="createPost__buttons dropdown__click">
+                  <button
+                    class="createPost_openCategories"
+                    onclick="DropDown2()"
+                  >
+                    Выбрать тему
+                  </button>
+                  <!-- <div class="createPost_arrowImg">
+                    <img src="../css/img/arrow_down.png" alt="img">
+                  </div> -->
+                </div>
+                <ul
+                  class="createPost_categoriesList dropdown__list2"
+                  id="dropdown__list2"
+                >
+                  <div class="createPost__item dropdown__item">
+                    <input type="checkbox" name="nature" /><label
+                      class="createPost__label"
+                      for="nature"
+                      >Природа</label
+                    >
+                  </div>
+
+                  <div class="createPost__item dropdown__item">
+                    <input type="checkbox" name="games" />
+                    <label class="createPost__label" for="games">Игры</label>
+                  </div>
+                  <div class="createPost__item dropdown__item">
+                    <input type="checkbox" name="science" />
+                    <label class="createPost__label" for="science">Наука</label>
+                  </div>
+                  <div class="createPost__item dropdown__item">
+                    <input type="checkbox" name="sight" />
+                    <label class="createPost__label" for="sight"
+                      >Достопримечательности</label
+                    >
+                  </div>
+                </ul>
+              </div>
+            </div>
           </div>
-          <input type="text" class="createPost__postBody" />
-          <button class="createPost__publish">Опубликовать</button>
-          <button class="createPost_preview">Предосмотр</button>
+          <input
+            type="text"
+            class="createPost__postBody"
+            placeholder="Основной текст"
+          />
+          <div class="buttons">
+            <button class="createPost__publish">Опубликовать</button>
+            <button class="createPost_preview">Предосмотр</button>
+          </div>
         </aside>
       </main>
-      <aside class="guide">
-        <h3 class="guide__title">Руководство по созданию</h3>
-      </aside>
+      <!-- <aside class="guide">
+        <span class="guide__title">Руководство по созданию</span>
+      </aside> -->
     </div>
   </body>
+  <script src="../js/script.js"></script>
 </html>
