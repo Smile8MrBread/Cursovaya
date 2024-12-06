@@ -48,7 +48,7 @@
 
 .header__searchInput:focus,
 .header__searchInput {
-    width: 100%;
+    width: 850px;
     background-color: #646363;
     border-width: 0;
     border-radius: 100px;
@@ -57,6 +57,10 @@
     padding-left: 10px;
     padding-right: 15px;
     color: #d6d5d5;
+
+    @media (max-width: 1750px) {
+        width: 600px;
+    }
 }
 
 .header__loop img {

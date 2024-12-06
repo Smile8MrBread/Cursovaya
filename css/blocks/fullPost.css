@@ -43,7 +43,8 @@
 .fullPost__commentUserImg,
 .fullPost__dislikeImg,
 .fullPost__likeHandImg,
-.fullPost__dislikeImg {
+.fullPost__dislikeImg,
+.fullPost__commentLine {
     width: fit-content;
     height: fit-content;
     margin: auto 0;
@@ -168,4 +169,14 @@
     height: 38px;
     width: 147px;
     margin: auto 10px;
+}
+
+.onComment {
+    margin-left: 55px;
+}
+
+.fullPost__commentLine {
+    position: absolute;
+    left: 27px;
+    margin-top: -110px;
 }

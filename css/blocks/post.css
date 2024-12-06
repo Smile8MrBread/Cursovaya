@@ -10,6 +10,14 @@
     padding: 15px;
     padding-top: 35px;
     border-bottom: 1px solid white;
+
+    @media (max-width: 1750px) {
+        max-width: 600px;
+    }
+    @media (max-width: 1500px) {
+        margin: 0;
+        left: 20vw;
+    }
 }
 
 .post:first-child {
@@ -26,7 +34,9 @@
     flex-direction: column;
 }
 
-.post__authorImg img, .post__likeImg img, .post__commentImg img {
+.post__authorImg img,
+.post__likeImg img,
+.post__commentImg img {
     width: 55px;
     height: 55px;
 }
@@ -36,6 +46,11 @@
     display: flex;
     width: 820px;
     height: 420px;
+    border-radius: 10px;
+
+    @media (max-width: 1750px) {
+        max-width: 600px;
+    }
 }
 
 .post__mainImg img {
@@ -70,7 +85,8 @@
     display: flex;
 }
 
-.post__likesCount, .post__commentsCount {
+.post__likesCount,
+.post__commentsCount {
     margin: auto;
     padding-left: 10px;
     font-size: 24px;
